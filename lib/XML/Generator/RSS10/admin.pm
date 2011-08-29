@@ -1,35 +1,43 @@
 package XML::Generator::RSS10::admin;
+{
+  $XML::Generator::RSS10::admin::VERSION = '0.02';
+}
 
 use strict;
 
 use base 'XML::Generator::RSS10::Module';
 
-
 sub NamespaceURI { 'http://webns.net/mvcb/' }
 
-sub contents
-{
+sub contents {
     my $class = shift;
-    my $rss = shift;
-    my $p = shift;
+    my $rss   = shift;
+    my $p     = shift;
 
-    foreach my $elt ( sort keys %$p )
-    {
-        $rss->_element( $class->Prefix, $elt,
-                        [ 'rdf', 'resource', $p->{$elt} ],
-                      );
+    foreach my $elt ( sort keys %$p ) {
+        $rss->_element(
+            $class->Prefix, $elt,
+            [ 'rdf', 'resource', $p->{$elt} ],
+        );
         $rss->_newline_if_pretty;
     }
 }
 
-
 1;
 
-__END__
+# ABSTRACT: Support for the Administrative (admin) RSS 1.0 module
+
+
+
+=pod
 
 =head1 NAME
 
 XML::Generator::RSS10::admin - Support for the Administrative (admin) RSS 1.0 module
+
+=head1 VERSION
+
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -60,4 +68,20 @@ module.
 This module handles only two parameters, "errorReportsTo" and
 "generatorAgent", both of which are channel subelements.
 
+=head1 AUTHOR
+
+Dave Rolsky <autarch@urth.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2011 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
+
 =cut
+
+
+__END__
+

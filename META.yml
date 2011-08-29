@@ -1,30 +1,23 @@
---- #YAML:1.0
+---
+abstract: 'Generate SAX events for RSS'
+author:
+  - 'Dave Rolsky <autarch@urth.org>'
+build_requires:
+  Test::More: 0.88
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110930'
+license: artistic_2
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: XML-Generator-RSS10
-version: 0.01
-author: David Rolsky <autarch@urth.org>
-abstract: Generate SAX events for RSS
-license: perl
 requires:
   Params::Validate: 0
-  Test::More: 0
   XML::Filter::BufferText: 1.01
   XML::SAX::Base: 0
-build_requires:
-  XML::SAX::Writer: 0
-provides:
-  XML::Generator::RSS10:
-    file: lib/XML/Generator/RSS10.pm
-    version: 0.01
-  XML::Generator::RSS10::Module:
-    file: lib/XML/Generator/RSS10/Module.pm
-  XML::Generator::RSS10::admin:
-    file: lib/XML/Generator/RSS10/admin.pm
-  XML::Generator::RSS10::cc:
-    file: lib/XML/Generator/RSS10/cc.pm
-  XML::Generator::RSS10::content:
-    file: lib/XML/Generator/RSS10/content.pm
-  XML::Generator::RSS10::dc:
-    file: lib/XML/Generator/RSS10/dc.pm
-  XML::Generator::RSS10::sy:
-    file: lib/XML/Generator/RSS10/sy.pm
-generated_by: Module::Build version 0.25
+resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=XML-Generator-RSS10
+  repository: git://git.urth.org/XML-Generator-RSS10.git
+version: 0.02

@@ -1,12 +1,14 @@
-XML-Generator-RSS10
 
-This module can be used to generate SAX events for RSS10.
 
-INSTALLATION
+This archive contains the distribution XML-Generator-RSS10,
+version 0.02:
 
-To install this module, run the following commands:
+  Generate SAX events for RSS
 
-    perl Build.PL
-    ./Build
-    ./Build test
-    ./Build install
+This software is Copyright (c) 2011 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
+
+

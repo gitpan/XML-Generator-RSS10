@@ -1,10 +1,8 @@
-#!/usr/bin/perl -w
+use strict;
+use warnings;
 
-use Test::More tests => 1;
+use Test::More;
 
-BEGIN
-{
-    use_ok( 'XML::Generator::RSS10' );
-}
+use_ok('XML::Generator::RSS10');
 
-diag( "Testing XML::Generator::RSS10 $XML::Generator::RSS10::VERSION" );
+done_testing();

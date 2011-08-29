@@ -1,16 +1,19 @@
-Build.PL
 Changes
+INSTALL
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+dist.ini
 lib/XML/Generator/RSS10.pm
+lib/XML/Generator/RSS10/Module.pm
 lib/XML/Generator/RSS10/admin.pm
 lib/XML/Generator/RSS10/cc.pm
 lib/XML/Generator/RSS10/content.pm
 lib/XML/Generator/RSS10/dc.pm
-lib/XML/Generator/RSS10/Module.pm
 lib/XML/Generator/RSS10/sy.pm
-LICENSE
-MANIFEST			This list of files
-META.yml
-README
 t/00-load.t
 t/01-basic.t
 t/02-image.t
@@ -21,7 +24,8 @@ t/06-custom-modules.t
 t/07-state-errors.t
 t/08-content-module.t
 t/09-cc-module.t
-t/pod-coverage.t
-t/pod.t
-
-SIGNATURE    Added here by Module::Build
+t/release-cpan-changes.t
+t/release-eol.t
+t/release-no-tabs.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
